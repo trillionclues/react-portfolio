@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "HTML",
+    "experience": 3
+  },
+  {
+    "id": 2,
+    "name": "CSS",
+    "experience": 3
+  },
+  {
+    "id": 3,
+    "name": "JavaScript",
+    "experience": 1.5
+  },
+  {
+    "id": 4,
+    "name": "Accessibility",
+    "experience": 2
+  },
+  {
+    "id": 5,
+    "name": "React",
+    "experience": 0.5
+  },
+  {
+    "id": 6,
+    "name": "Sass",
+    "experience": 2
+  }
+]
