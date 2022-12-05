@@ -15,13 +15,17 @@ function Projects() {
               <img src={project.thumbnail.small} alt='' />
               <h4>{project.title}</h4>
               <p>{project.skills.flat()}</p>
-              {/* <div className='project__lang'>
-                {project.skills.map((skill) => {
-                  return <p>{skill}</p>
-                })}
-              </div> */}
+              <div className='project__lang'>
+                {/* {projectdata.map((skills) => {
+                  return (
+                    <p>
+                      <span>{skills.skill[0]}</span>
+                      <span>{skills.skill[1]}</span>
+                    </p>
+                  )
+                })} */}
+              </div>
               <div className='overview'>
-                {/* <p>View details</p> */}
                 <p>Github</p>
               </div>
             </div>

@@ -19,7 +19,9 @@ function Hero() {
           building accessible web interfaces that users love.
         </p>
         <div className='contact'>
-          <button>CONTACT ME</button>
+          <a href='#'>
+            <button>CONTACT ME</button>
+          </a>
         </div>
       </div>
       <img className='hero__img' src={profileimg} alt='profile-image' />
