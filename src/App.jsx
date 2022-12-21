@@ -1,24 +1,17 @@
 import React from 'react'
-import Contact from './Components/Contact'
-import Footer from './Components/Footer'
-import Hero from './Components/Hero'
-import Nav from './Components/Nav'
-import Projects from './Components/Projects'
-import Skills from './Components/Skills'
+
+// PAGES
+import Nav from './Components/Navbar'
 import './index.css'
+import ErrorPage from './routes/error-page'
+import { Outlet } from 'react-router'
 
 function App() {
   return (
-    <>
-      <div className='container'>
-        <Nav />
-        <Hero />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
-    </>
+    <div className='container'>
+      <Nav />
+      <Outlet />
+    </div>
   )
 }
 

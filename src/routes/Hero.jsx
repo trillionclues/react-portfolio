@@ -1,7 +1,8 @@
 import React from 'react'
-import profileimg from '../assets/image-profile-desktop.webp'
+import profileimg from '../assets/folio-img.jpg'
 import patterncircle from '../assets/pattern-circle.svg'
 import patternrings from '../assets/pattern-rings.svg'
+import Skills from '../Components/Skills'
 
 function Hero() {
   return (
@@ -18,13 +19,13 @@ function Hero() {
           Based in Lagos, Nigeria. I'm a Frontend Developer passionate about
           building accessible web interfaces that users love.
         </p>
-        <div className='contact'>
-          <a href='#'>
+        <div className='button'>
+          <a href={`contact/1`}>
             <button>CONTACT ME</button>
           </a>
         </div>
       </div>
-      <img className='hero__img' src={profileimg} alt='profile-image' />
+      {/* <img className='hero__img' src={profileimg} alt='profile-image' /> */}
       <img className='circle__img' src={patterncircle} alt='pattern-circle' />
       <img className='rings__img' src={patternrings} alt='pattern-rings' />
     </div>

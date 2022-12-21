@@ -11,7 +11,7 @@ function Skills() {
         {Skillset.map((skill) => {
           // const [id, name, experience] = skill
           return (
-            <div className='skill'>
+            <div className='skill' key={skill.id}>
               <h2>{skill.name}</h2>
               <p>{skill.experience} Years Experience</p>
             </div>
