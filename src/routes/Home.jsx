@@ -7,7 +7,7 @@ import Contact from './Contact'
 
 const Home = () => {
   return (
-    <div className=''>
+    <div className='home__menu'>
       <Hero />
       <Dropdown />
       <Skills />
