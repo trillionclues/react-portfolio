@@ -25,13 +25,25 @@ function Projects() {
           {projectdata.map((project) => {
             return (
               <div className='project' key={project.id}>
-                <img src={project.thumbnail.small} alt='' />
+                <img
+                  className='image__element'
+                  src={project.thumbnail.small}
+                  alt='project-image'
+                />
+                <div className='inner__elements'>
+                  <button>
+                    <a href={project.projectUrl}>VIEW PROJECT</a>
+                  </button>
+                  <button>
+                    <a href={project.sourceCodeUrl}>VIEW CODE</a>
+                  </button>
+                </div>
                 <h4>{project.title}</h4>
                 <span>{getSkills(project)}</span>
                 <div className='project__lang'></div>
-                <div className='overview'>
+                {/* <div className='overview'>
                   <p>Github</p>
-                </div>
+                </div> */}
               </div>
             )
           })}

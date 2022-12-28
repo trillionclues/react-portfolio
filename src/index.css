@@ -158,6 +158,7 @@ button {
   text-underline-offset: 0.7rem;
   cursor: pointer;
   margin-top: 2rem;
+  color: #fff;
 }
 
 button:hover {
@@ -255,6 +256,7 @@ button:hover {
 /* Projects Section */
 .section__projects {
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .section__projects .projects__nav {
@@ -278,11 +280,62 @@ button:hover {
 
 .projects .project {
   transition: 0.3s ease-in-out;
+  position: relative;
   /* transform: translateY(101%); */
+}
+
+.project .inner__elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease;
+  opacity: 0;
+  gap: 1rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /* text-align: center; */
+}
+
+.inner__elements button {
+  border: none;
+  padding: 0.6rem 1.2rem 0.6rem 0;
+  font-weight: 300;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: transparent;
+  text-decoration: underline;
+  text-decoration-color: aqua;
+  text-underline-offset: 0.7rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.inner__elements button:hover {
+  font-size: 1em;
+  font-weight: 900;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  border-color: aqua;
+  text-decoration: none;
+}
+
+.project:hover .image__element {
+  opacity: 0.3;
+}
+
+.project:hover .inner__elements {
+  opacity: 1;
 }
 
 .project img {
   max-width: 100%;
+  opacity: 1;
+  display: block;
+  backface-visibility: hidden;
 }
 .project h4 {
   font-size: 1.2rem;
@@ -414,7 +467,8 @@ form button {
 
 form a button:hover {
   border: none;
-  background-color: rgb(59, 102, 102);
+  /* background-color: rgb(59, 102, 102); */
+  background-color: #000;
 }
 
 .contact .contact__rings {
@@ -785,5 +839,132 @@ li a img {
     left: -55%;
     width: 450px;
     height: 120px;
+  }
+
+  /* projects  */
+
+  .projects__nav {
+    margin-bottom: 1.5rem;
+  }
+
+  .section__projects .projects__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .projects__nav h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 0.5;
+  }
+
+  .projects__nav button {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .projects__nav button:hover {
+    color: aqua;
+    border: none;
+  }
+
+  .section__projects .projects {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .project {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    position: unset;
+  }
+
+  .project h4 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 0.5rem;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+  }
+
+  .project span {
+    font-size: 1.2rem;
+    color: rgba(248, 244, 244, 0.798);
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: -1rem;
+    gap: 0;
+  }
+
+  .project .project__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .project .project__img img {
+    width: 100%;
+    height: 100%;
+    backface-visibility: visible;
+  }
+
+  .project .project__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+
+  /* //// */
+  .project .inner__elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+    opacity: 0;
+    gap: 1rem;
+    position: unset;
+    top: 0;
+    left: 0;
+    transform: none;
+    -ms-transform: none;
+  }
+
+  .inner__elements button:hover {
+    font-size: 1em;
+    font-weight: 900;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    border-color: aqua;
+    text-decoration: none;
+  }
+
+  .project:hover .image__element {
+    opacity: 1;
+  }
+
+  .project:hover .inner__elements {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .project img {
+    max-width: 100%;
+    opacity: 1;
+    display: block;
+    backface-visibility: visible;
   }
 }
