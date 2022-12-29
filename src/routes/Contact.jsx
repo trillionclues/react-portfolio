@@ -43,7 +43,7 @@ function Contact() {
           ></textarea>
 
           <a href='#'>
-            <button>SEND MESSAGE</button>
+            <button type='submit'>SEND MESSAGE</button>
           </a>
         </form>
 

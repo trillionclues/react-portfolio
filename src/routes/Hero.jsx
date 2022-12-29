@@ -21,7 +21,10 @@ function Hero() {
         </p>
         <div className='button'>
           {/* <a href={`contact/1`}> */}
-          <a href='https://drive.google.com/file/d/1o06W61Hda2jI1XD87PnJRSLTC9dO0v9B/view?usp=sharing'>
+          <a
+            href='https://drive.google.com/file/d/1o06W61Hda2jI1XD87PnJRSLTC9dO0v9B/view?usp=sharing'
+            target='_blank'
+          >
             <button>CONTACT ME</button>
           </a>
         </div>
